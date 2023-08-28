@@ -1,86 +1,39 @@
+**Intern / Trainee - Products & Technology**
 
-As an Intern / Trainee, you'll work as part of a team of problem solvers, helping to solve complex business issues from strategy to execution.
+Join our dynamic team as an Intern / Trainee, contributing problem-solving skills to tackle complex business challenges spanning from strategy formulation to execution.
 
+**Qualifications:**
 
-Basic Qualifications
+- **Education:** Bachelor's degree in relevant field.
+- **Experience:** Entry-level, 0 years of experience required.
+- **Preferred GPA:** 3.0 or above.
 
+**Key Information:**
 
-Job Requirements and Preferences:
+- Ideal candidates are in their 3rd or 4th year of a 4- or 5-year degree program.
+- Internship typically occurs in the summer prior to intended graduation.
 
+**Preferred Knowledge/Skills:**
 
-Minimum Degree Required
+Demonstrate ability or success in the following areas:
 
-
-Bachelor Degree
-
-
-Minimum Years Of Experience
-
-
-0 year(s)
-
-
-Preferred Qualifications
-
-
-Preferred Fields of Study:
-
-
-Computer and Information Science, Computer and Information Science & Accounting, Computer Applications, Computer Engineering, Computer Engineering & Accounting, Computer Management, Computer Programming, Computer Systems Analysis, Computer Systems Analysis & Accounting, Information CyberSecurity, Information CyberSecurity & Accounting, Information Technology, Information Technology & Accounting, Management Information Systems, Management Information Systems & Accounting, Software App, Systems Engineering, Systems Engineering & Accounting, Artificial Intelligence and Robotics, Data Processing/Analytics/Science, Business Analytics, Business Application Programming, Physics, Mathematics, Engineering and Business, Engineering, Statistics
-
-
-Additional Educational Preferences
-
-
-Preferred cumulative GPA: 3.0
-
-
-Preferred Major GPA: 3.0
-
-
-Products and Technology internship positions are entry-level roles and job seekers are traditionally either in their 3rd year of a 4 year degree program or in the 4th year of a 5 year program. Products & Technology interns typically join us during the summer prior to their intended graduation year.
-
-
-Preferred Knowledge/Skills
-
-
-Demonstrates some abilities and/or a proven record of success in one or more of the tools and technologies listed below:
-
-
-Project management approaches (e.g., agile) & tools (e.g., Azure DevOps);
-Programming skills (e.g., Java, .NET, Node.js, Python);
-Analytics tools (e.g., Alteryx, R, Jupyter Notebooks);
-Big data tools (e.g., Databricks, Spark, Kafka);
-Data storage technologies for structured (e.g., SQL Server, Postgres) and unstructured (e.g., CosmosDB, Neo4j) data;
-Front end web technology skills (e.g., Angular, React, Javascript);
-Visualization tools (e.g., Tableau, PowerBI);
-Automation and Low Code tools (e.g. Msft Power Platform, RPA tools);
-Data integration tools (e.g., Azure Data Factory, service bus, Apache NiFi);
-Testing tool experiences (e.g., Selenium, Cypress, PyTest, BlazeMeter, JMeter);
-DevOps technologies & tools (e.g., Git, Jenkins, Docker/Kubernetes, Azure DevOps);
-Cloud IaaS/PaaS (e.g., AWS, GCP, Azure);
-Data modeling;
-Possessing knowledge of relevant technology areas including machine learning, natural language processing (NLP), low code application development, and/or blockchain;
-Management, multitasking, team organization and activity prioritization;
-Researching, recommending and implementing tools and technology that will reduce product risk, increase project transparency and further drive innovation across technical teams;
-Driving and using creative problem solving skills, emphasizing the ability to deliver workable solutions/designs under tight timeframes;
-Exhibiting a work modality that is open to new ideas and possessing a passion for learning and understanding new and emerging technologies, techniques, tools, etc.;
-Collaborating and contributing as a team member;
-Understanding personal and team roles;
-Contributing to a positive working environment by building relationships with team members and proactively seeking guidance, clarification and feedback; and,
-Innovating through new and existing technologies, along with experimenting with digitization solutions.
-
-
-Learn more about how we work: https://pwc.to/how-we-work
-
-
-PwC does not intend to hire experienced or entry level job seekers who will need, now or in the future, PwC sponsorship through the H-1B lottery, except as set forth within the following policy: https://pwc.to/H-1B-Lottery-Policy.
-
-
-All qualified applicants will receive consideration for employment at PwC without regard to race; creed; color; religion; national origin; sex; age; disability; sexual orientation; gender identity or expression; genetic predisposition or carrier status; veteran, marital, or citizenship status; or any other status protected by law. PwC is proud to be an affirmative action and equal opportunity employer.
-
-
-For positions based in San Francisco, consideration of qualified candidates with arrest and conviction records will be in a manner consistent with the San Francisco Fair Chance Ordinance.
-
-
-For positions in Albany (NY), California, Colorado, Nevada, New York City, Washington State, or Westchester County (NY), please visit the following link for pay range information: https://pwc.to/payrange-v1-productstechintern
+- Project management using agile methodologies and tools like Azure DevOps.
+- Programming skills in languages like Java, .NET, Node.js, Python.
+- Working with analytics tools such as Alteryx, R, Jupyter Notebooks.
+- Familiarity with big data tools like Databricks, Spark, Kafka.
+- Knowledge of structured (SQL Server, Postgres) and unstructured (CosmosDB, Neo4j) data storage technologies.
+- Proficiency in front-end web technologies like Angular, React, JavaScript.
+- Experience with visualization tools such as Tableau, PowerBI.
+- Familiarity with automation and low code tools like Msft Power Platform, RPA tools.
+- Understanding of data integration tools like Azure Data Factory, service bus, Apache NiFi.
+- Testing tool experience including Selenium, Cypress, PyTest, BlazeMeter, JMeter.
+- Familiarity with DevOps technologies like Git, Jenkins, Docker/Kubernetes, Azure DevOps.
+- Knowledge of cloud IaaS/PaaS platforms like AWS, GCP, Azure.
+- Data modeling skills.
+- Awareness of technology trends like machine learning, NLP, low code app development, and blockchain.
+- Strong project management, multitasking, and team collaboration abilities.
+- Innovative problem-solving skills under tight deadlines.
+- Openness to new ideas and a passion for learning emerging technologies.
+- Effective teamwork and communication skills.
+- Ability to create a positive work environment by building relationships and seeking guidance.
+- Interest in exploring digitization solutions.

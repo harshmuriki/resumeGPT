@@ -1,7 +1,6 @@
 import requests
-# from .secrets import api_key
-api_key = ""
-
+# from .. import secrets
+api_key = "687d53640c0fb0375cec6a0e04112f87712813e28c41dda231c7683620139f70"
 
 #model = "llama-2-7b-chat"
 CONTEXT_STORED = 5
@@ -18,6 +17,9 @@ class LlamaThread:
             "Authorization": f"Bearer {api_key}"
         }
         response = requests.post(url, headers=headers)
+
+        print("The response is:", response)
+        print("Started?")
 
 
     def stop(self):
@@ -38,12 +40,12 @@ class LlamaThread:
         payload = {
             "model": f"togethercomputer/{self.model}",
             "prompt": f"{context}",
-            "max_tokens": 256,
+            "max_tokens": 5000,
             "stop": "<|END|>",
             "temperature": 0.7,
             "top_p": 0.7,
             "top_k": 50,
-            "repetition_penalty": 1
+            "repetition_penalty": 1,
         }
         headers = {
             "accept": "application/json",
@@ -61,15 +63,13 @@ class LlamaThread:
             if response.status_code == 200 and "choices" in response.json()["output"]:
 
                 answer = str(response.json()["output"]["choices"][0]["text"])
-                if "<|END|>" in answer:
-                    answer.replace("<|END|>", "")
+                # if "<|END|>" in answer:
+                #     answer.replace("<|END|>", "")
 
-                # Try to adjust context size dynamically
-                if len(self.stored_messages) > CONTEXT_STORED:
-                    self.stored_messages.pop(0)
+                # # Try to adjust context size dynamically
+                # if len(self.stored_messages) > CONTEXT_STORED:
+                #     self.stored_messages.pop(0)
                 self.stored_messages.append((question, answer))
-
-
                 return answer
             else :
                 print(response.json()["output"])
