@@ -1,1 +1,4 @@
 backend/__pycache__/model.cpython-310.pyc
+backend/__pycache__/huggingface.cpython-311.pyc
+backend/__pycache__/model.cpython-311.pyc
+backend/__pycache__/openai_test.cpython-311.pyc

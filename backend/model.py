@@ -1,9 +1,10 @@
 import requests
 # from .. import secrets
-api_key = "687d53640c0fb0375cec6a0e04112f87712813e28c41dda231c7683620139f70"
-
-#model = "llama-2-7b-chat"
+# api_key = "687d53640c0fb0375cec6a0e04112f87712813e28c41dda231c7683620139f70"
+api_key = "d538cfc64fdf6a835c9249d59ada38062b784ad2b37d5cf9f70fe4b98eef001d"
+# model = "llama-2-7b-chat"
 CONTEXT_STORED = 5
+
 
 class LlamaThread:
     def __init__(self, model):
@@ -18,10 +19,6 @@ class LlamaThread:
         }
         response = requests.post(url, headers=headers)
 
-        print("The response is:", response)
-        print("Started?")
-
-
     def stop(self):
         url = f"https://api.together.xyz/instances/stop?model=togethercomputer%2F{self.model}"
         headers = {
@@ -31,25 +28,20 @@ class LlamaThread:
         requests.post(url, headers=headers)
         print("EXECUTION STOPPED")
 
-
-    def ask_question(self, question, context):
+    def ask_question(self, question):
         url = "https://api.together.xyz/inference"
-
-        # prompt = self.format_prompt(question, context)
 
         payload = {
             "model": f"togethercomputer/{self.model}",
-            "prompt": f"{context}",
-            "max_tokens": 5000,
-            "stop": "<|END|>",
+            "prompt": f"{question}",
+            "max_tokens": 512,
+            "stop": "",
             "temperature": 0.7,
             "top_p": 0.7,
             "top_k": 50,
-            "repetition_penalty": 1,
+            "repetition_penalty": 1
         }
         headers = {
-            "accept": "application/json",
-            "content-type": "application/json",
             "Authorization": f"Bearer {api_key}"
         }
         # response = requests.post(url, json=payload, headers=headers)
@@ -71,14 +63,12 @@ class LlamaThread:
                 #     self.stored_messages.pop(0)
                 self.stored_messages.append((question, answer))
                 return answer
-            else :
-                print(response.json()["output"])
+            else:
+                print("error:", response.json()["output"])
 
         except requests.exceptions.RequestException as e:
             print(f"An exception was thrown {e}")
             self.stop()
-
-
 
     def format_prompt(self, question, context):
         documentation_text = context
@@ -94,7 +84,6 @@ class LlamaThread:
 
         return prompt.strip()
 
-
     def get_chat_history(self):
         history_string = ""
         for (question_past, answer) in self.stored_messages:
@@ -105,10 +94,8 @@ class LlamaThread:
             history_string += f"{answer}\n"
         return history_string
 
-
     def clear_chat_history(self):
         self.stored_messages = []
-
 
 
 def get_chat_history(self):
