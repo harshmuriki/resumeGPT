@@ -9,9 +9,9 @@ job_desc = open("test-data/job-description-1.txt", mode="r")
 
 job_description = job_desc.read()
 
-context = f'"This is my current resume: {raw_data}. Edit the resume based on this jobs description {job_description} and give me a suitable resume"'
+context = f'"My current resume {raw_data}. Edit the resume based on this jobs description {job_description} and give me a suitable resume"'
 
-model = LlamaThread("llama-2-7b-chat")
+model = LlamaThread("llama-2-70b-chat")
 model.start()
 output = model.ask_question("", context)
 

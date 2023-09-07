@@ -1,6 +1,6 @@
 import requests
 # from .secrets import api_key
-api_key = ""
+api_key = "998051c798c4822419ca2ad5cfb32fa66d5f33e02666c69e94ca87071f7cd929"
 
 
 #model = "llama-2-7b-chat"
@@ -38,7 +38,7 @@ class LlamaThread:
         payload = {
             "model": f"togethercomputer/{self.model}",
             "prompt": f"{context}",
-            "max_tokens": 256,
+            "max_tokens": 4096,
             "stop": "<|END|>",
             "temperature": 0.7,
             "top_p": 0.7,
