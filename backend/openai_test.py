@@ -1,7 +1,7 @@
 import openai
 
 
-def prompt(question):
+def prompt(init_prompt, question):
     openai.api_key = "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"
 
     # response = openai.ChatCompletion.create(
@@ -16,9 +16,9 @@ def prompt(question):
     # )
 
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-3.5-turbo-16k",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": init_prompt},
             {"role": "user", "content": question}
         ]
     )

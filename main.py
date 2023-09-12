@@ -15,7 +15,7 @@ question = f'"This is my resume {raw_data}. \n\n I want you to act as an ai resu
 # print(question)
 
 
-question = prompt + f'"\nThis is my resume {raw_data}. \n\n Job description: {job_description}."'
+question = f'"\nThis is my resume {raw_data}. \n\n Job description: {job_description}."'
 model = LlamaThread("llama-2-7b-chat")
 model.start()
 output = model.ask_question("", question)
