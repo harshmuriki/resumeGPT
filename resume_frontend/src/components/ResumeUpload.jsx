@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
-
+import {firestore} from "../firebase"
+import { addDoc, collection } from "@firebase/firestore"
 export default function ResumeUpload() {
 
     const [selectedFile, setSelectedFile] = useState(null);
+    const fileRef = useRef()
+    const ref = collection(firestore, "resume_file")
 
     const handleFileChange = (event) => {
       const file = event.target.files[0];
       setSelectedFile(file);
     };
 
-    const handleUpload = () => {
-        alert("File uploaded successfully")
+    const handleUpload = async (e) => {
+      e.preventDefault();
+      alert("File uploaded successfully")
+
+      let data = {
+        file: fileRef.current.value,
+      }
+
+      try {
+        addDoc(ref, data)
+      } catch (e) {
+          console.log(e);
+      }
     }
 
   
@@ -21,23 +35,6 @@ export default function ResumeUpload() {
       if (selectedFile) {
         const formData = new FormData();
         formData.append('file', selectedFile);
-  
-        // try {
-        //   const response = await fetch('/your-upload-endpoint', {
-        //     method: 'POST',
-        //     body: formData,
-        //   });
-  
-        //   if (response.ok) {
-        //     alert('File uploaded successfully!');
-        //     setSelectedFile(null);
-        //   } else {
-        //     alert('File upload failed.');
-        //   }
-        // } catch (error) {
-        //   console.error('Error uploading file:', error);
-        //   alert('File upload failed.');
-        // }
       }
     };
   
@@ -50,7 +47,7 @@ export default function ResumeUpload() {
             accept=".csv, .xlsx, .pdf"
             onChange={handleFileChange}
           />
-          <button type="submit" disabled={!selectedFile} onClick={handleUpload}>
+          <button type="submit" ref={fileRef} disabled={!selectedFile} onClick={handleUpload}>
             Upload File
           </button>
         </form>
