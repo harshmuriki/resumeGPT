@@ -1,56 +1,53 @@
-import React, { useRef } from 'react';
-import { useState } from 'react';
-import {firestore} from "../firebase"
-import { addDoc, collection } from "@firebase/firestore"
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { ref, uploadBytes, getDownloadURL, listAll, list } from "firebase/storage";
+import { storage } from "../firebase";
+import { v4 } from 'uuid';
+
 export default function ResumeUpload() {
 
-    const [selectedFile, setSelectedFile] = useState(null);
-    const fileRef = useRef()
-    const ref = collection(firestore, "resume_file")
+    const [fileUpload, setFileUpload] = useState(null);
+    const [fileUrls, setFileUrls] = useState([])
 
-    const handleFileChange = (event) => {
-      const file = event.target.files[0];
-      setSelectedFile(file);
-    };
+    const filesListRef = ref(storage, "files/")
+    const handleUpload = () => {
+      console.log(fileUpload)
+      if (fileUpload == null) 
+        return;
+      const fileRef = ref(storage, `files/${fileUpload.name + v4()}`)
 
-    const handleUpload = async (e) => {
-      e.preventDefault();
-      alert("File uploaded successfully")
-
-      let data = {
-        file: fileRef.current.value,
-      }
-
-      try {
-        addDoc(ref, data)
-      } catch (e) {
-          console.log(e);
-      }
+      uploadBytes(fileRef, fileUpload).then((snapshot) => {
+        getDownloadURL(snapshot.ref).then((url) =>{
+          setFileUrls((prev) => [...prev, url])
+        })
+      })
     }
 
-  
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-  
-      if (selectedFile) {
-        const formData = new FormData();
-        formData.append('file', selectedFile);
-      }
-    };
+    useEffect(() => {
+      listAll(filesListRef).then((response) => {
+        response.items.forEach((item) => {
+          getDownloadURL(item).then((url) => {
+            setFileUrls((prev) => [...prev, url]);
+          });
+        });
+      });
+    }, []);
   
     return (
       <div>
-        <h2>File Upload</h2>
-        <form onSubmit={handleSubmit}>
           <input
             type="file"
             accept=".csv, .xlsx, .pdf"
-            onChange={handleFileChange}
+            onChange={(event) => {
+              setFileUpload(event.target.files[0])
+            }}
           />
-          <button type="submit" ref={fileRef} disabled={!selectedFile} onClick={handleUpload}>
-            Upload File
+          <button type="submit" onClick={handleUpload}>
+            Upload
           </button>
-        </form>
+          {fileUrls.map((url) => {
+            return <img src={url} />
+          })}
       </div>
     );
 }
