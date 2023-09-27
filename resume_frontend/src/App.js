@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import ResumeUpload from './components/ResumeUpload';
+import JobDescription from './components/JobDescription';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Trial</h1>
-        <ResumeUpload/>
+        <div>
+          <div style={{marginBottom: '5vw'}}>
+            <ResumeUpload/>
+          </div>
+          <JobDescription/>
+          </div>
       </header>
     </div>
   );
