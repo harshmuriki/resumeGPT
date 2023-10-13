@@ -1,7 +1,7 @@
 import backend.pdfparser as openaiLLM
 
 
-resumePath = "test-data/Resume_Harsh_Muriki_SWE.pdf"
+resumePath = "test-data/Resume_Yash.pdf"
 jobDesPath = "test-data/job-description-1.txt"
 
 job_link = "https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3729882071"
@@ -12,12 +12,15 @@ jobDescription = openaiLLM.get_JobDescription(
 
 print("jobDescription", jobDescription)
 
-edited_resume = openaiLLM.edit_complete_resume(resumePath, jobDescription)
+resume_subsections = openaiLLM.edit_resume_subsection(resumePath, jobDescription)
+print(resume_subsections)
+# edited_resume = openaiLLM.edit_complete_resume(resumePath, jobDescription)
 
-print(edited_resume)
+# print("Here is the customized resume")
+# print(edited_resume)
 
-formated_latex = openaiLLM.convert_to_latex(edited_resume)
+# formated_latex = openaiLLM.convert_to_latex(edited_resume)
 
 # print(formated_latex)
-with open('formatexLatex.txt', 'w') as f:
-    f.write(formated_latex)
+# with open('formatexLatex.txt', 'w') as f:
+#     f.write(formated_latex)

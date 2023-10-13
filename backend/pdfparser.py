@@ -35,41 +35,41 @@ def read_pdf(pdf):
 
 def split_subsections(pdf):
     pdfData = read_pdf(pdf)
-    question = f'Separate this document into subsections by each job or experience and add a new line character and 15 dashes after each sub-sub section. {pdfData}'
+    question = f'Separate this document into subsections by each job or experience and add a new line character and 15 dashes after each sub-sub section, {pdfData}. A subsection could + include words like experience, projects, education, leadership, volunteering, and skills so split the resume accordingly.'
     init_prompt = "You are an AI assistant that separates sections in the resume."
-    output = openai_LLM.prompt(init_prompt, question)
+    output = openai_LLM.openai_prompt(init_prompt, question)
     return str(output).split('---------------')
 
 
 def edit_resume_section(job_desc, resume_sub_section):
-    question = f'This is the job description: \n {job_desc}. Edit this resume based on the job description.\n {resume_sub_section}'
+    question = f'This is the job description: \n {job_desc}. Edit this resume subsection based on the job description.\n {resume_sub_section}'
     init_prompt = "You are an AI assistant that takes in a part of a resume and edits it based on the below job description."
     init_prompt1 = "Please analyze my resume and the job description I'm targeting. Based on your analysis, automatically edit my resume to tailor it to the job description. After the edits, provide me with the finalized and edited resume for view. If I have any specific preferences or further instructions, I'll let you know during the process. Let's get started!"
-    output = openai_LLM.prompt(init_prompt1, question)
+    output = openai_LLM.openai_prompt(init_prompt1, question)
 
     return output
 
 
-def edit_resume_subsection():
-    pdfPath = "../test-data/Resume_Harsh_Muriki_SWE.pdf"
+def edit_resume_subsection(resume_pdf, job_desc):
+    #pdfPath = "../test-data/Resume_Yash.pdf"
 
-    with open("../test-data/job-description-1.txt", "r") as myfile:
-        job_desc = myfile.read()
+    # with open("../test-data/job-description-1.txt", "r") as myfile:
+    #     job_desc = myfile.read()
 
     # print(job_desc)
-    sections = split_subsections(pdfPath)
+    sections = split_subsections(resume_pdf)
     print("Finished dividing the sections")
     print(len(sections))
 
-    for i in sections:
-        print("\n\n")
-        print("!!!Section: ", i)
-        print("------END-----")
+    # for i in sections:
+    #     print("\n\n")
+    #     print("!!!Section: ", i)
+    #     print("------END-----")
 
     for sub_section in sections:
         new_section = edit_resume_section(job_desc, sub_section)
 
-        print("Old Section:", sub_section)
+        print("Old Section:\n", sub_section)
         print("New Section", new_section)
         print("--------")
 
@@ -90,7 +90,7 @@ def edit_complete_resume(resumePath, jobDescription):
     return output
 
 
-def convert_to_latex(editedResume, sourcefile="public\jakeresume.txt"):
+def convert_to_latex(editedResume, sourcefile="public/jakeresume.txt"):
 
     with open(sourcefile, "r") as myfile:
         jakeresumetemplate = myfile.read()
