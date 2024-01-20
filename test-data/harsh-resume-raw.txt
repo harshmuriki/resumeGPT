@@ -1,0 +1,56 @@
+Harsh Muriki
+Atlanta,GA | harshsuhith@gmail.com | (650)-5324716 | linkedin.com/in/venkata-harsh-muriki | harshmuriki.com
+Education
+Georgia Institute Of Technology Atlanta, GA
+Bachelors in Computer Science; GPA: 3.72 August 2020 - May 2024
+Courses: Algorithms, Data Structures and Algorithms, Object Oriented Programming, Computer Vision, Robotics and
+Perception, Computer Organization, Statistics
+Work Experience
+Georgia Institute Of Technology Atlanta, GA
+Undergraduate Student Researcher; Autonomous hydroponic robotic system September 2021 - Present
+• Applying Object-Oriented CV algorithms coded in python to accurately position a robot arm for an optimal position with
+respect to the plant
+• Employing PyTorch and OpenCV python libraries to modify 3D point clouds to convert them to volumetric analysis
+• Utilizing ROS nodes to automate the data collection processes which reduced the manual workload by 50%
+• Using C++ and Python libraries to build an algorithm to enable both manual and autonomous control from onsite and remote
+locations
+MealPirates Atlanta, GA
+Co-Founder / Software Developer; Startup January 2022 - Present
+• Leading ideation and front-end web development on a team of 4, using Node.js sub-stack to optimize app functionality and
+improve customer experience
+• Developing a food delivery service that aims to deliver restaurant food at prices lower than the current delivery services
+• Utilizing GIT version control for project collaboration and analysis
+• Selected by Georgia Tech CreateX Startup launch program, offered $400K in seed funding to launch the product
+Campus Talk Atlanta, Georgia
+Intern; Startup August 2020 - January 2021
+• Led quality assurance process for iOS and Android mobile app platforms
+• Conducted competitor analysis across six companies and identified vital opportunities
+• Scoped new connectivity features and led a team of designers and developers to bring the product to the market
+Skills
+• Languages: Python, Java, C++, Node.js, Next.js, ROS, Arduino, Ubuntu
+• Tools: Docker, PyTorch, GIT, VS code, Computer Vision (Open CV), Open3D, Raspberry PI, APM 2.8
+Projects
+Experimental Flights Atlanta, Georgia
+Software Lead (Delivery Station Sub-Team); Georgia Tech Vertically Integrated Projects (VIP) August 2021 - Present
+• Building an autonomous drone to transport goods within Georgia Tech Campus
+• Programming Arduino micro-controllers in C++ coding language to control and automate the entire delivery system
+• Using Object-Oriented programming to design the methods for optimal usage and functioning of the delivery system
+Smart Soap Dispenser Fremont, CA
+Independent Inventor June 2021 - Dec 2021
+• Planned and built a Smart Soap Dispenser, incorporating C++ programming language and sensors such as Infrared Receiver
+and ESP 32 micro-controller to control the dispenser’s functionality
+• An IoT-based device whose rate of flow of soap and the number of times the soap dispenses can be controlled via an app
+HaemoCarrier Hyderabad, India
+Lead Builder and Programmer 2018 - 2020
+• Led a team of 3 peers to conceive and develop a drone that can be used to commercially transport blood from blood banks to
+hospitals during emergencies and challenging traffic conditions
+• Utilized the APM 2.8 flight controller with GPS, in configuration with Mission Planner software
+Involvement and Leadership
+Institute Of Electronics and Electrical Engineering Club (GT-IEEE) Atlanta, Georgia
+Lead, Robotics Team August 2022 - Present
+• Leading the Georgia Tech robotics team in the IEEE Southeast-Con 2023
+• Teaching a cohort of first-year students the basics of Computer Vision algorithms and Robotic controls
+Publications
+• Chen, G., Muriki. H., Pradalier, C., Chen, Y., Dellaert, F. (2023). “A Hybrid Cable-Driven Robot for Non-Destructive Leafy
+Plant Monitoring and Mass Estimation using Structure from Motion”, IEEE International Conference on Robotics and
+Automation (ICRA). Pending Review

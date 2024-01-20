@@ -1,0 +1,218 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+\begin{document}
+    
+    \begin{center}
+        \textbf{\Huge \scshape Yash Kumar Gupta} \\ \vspace{1pt}
+        \small 561-777-0836 $|$ \href{mailto:anshya17@gmail.com}{\underline{anshya17@gmail.com}} $|$ 
+        \href{https://linkedin.com/in/ygupta02}{\underline{linkedin.com/in/ygupta02}} $|$
+        \href{https://github.com/...}{\underline{github.com/...}}
+    \end{center}
+    
+    
+    \section{Education}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \item{
+            \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+                \textbf{Georgia Institute of Technology} & Atlanta, GA \\
+                Bachelor's of Science in Computer Science & Aug. 2020 -- Dec. 2023 \\
+            \end{tabular*}\vspace{-7pt}
+        }
+    \end{itemize}
+    
+    
+    \section{Experience}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{KPMG} & Tysons Corner, VA \\
+            \textit{Software Engineering Intern} & June 2023 -- Aug. 2023 \\
+        \end{tabular*}\vspace{-7pt}
+        \begin{itemize}
+            \item Built an interactive application with the Dash framework using the information gathered from pre-processed federal healthcare datasets to support 15 senior developers.
+            \item Automated the retrieval, display, and monitoring of client data.
+            \item Wrote unit tests with Pytest to achieve 80% code coverage.
+        \end{itemize}
+        
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{J.P. Morgan Chase} & Tampa, FL \\
+            \textit{Software Engineering Intern} & June 2022 -- Aug. 2022 \\
+        \end{tabular*}\vspace{-7pt}
+        \begin{itemize}
+            \item Collaborated in an Agile team with a CI/CD pipeline framework to build and deploy a full stack application consisting of a Spring Boot back-end and ReactJS front-end.
+            \item Developed a live service feature for real-time viewing and filtering of customized sanction data.
+            \item Performed unit tests with Jest to reach 70% code coverage.
+            \item Automated the process of data collection and analysis with the ability to export key metrics to Excel.
+        \end{itemize}
+        
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{T-Mobile} & Remote \\
+            \textit{Software Engineering Intern} & May 2021 -- Aug. 2021 \\
+        \end{tabular*}\vspace{-7pt}
+        \begin{itemize}
+            \item Contributed to the goal of maintaining T-Mobile’s e-commerce applications at 99.6% availability.
+            \item Deployed shell scripts in Linux to monitor health, availability, and Sarbanes-Oxley compliance of applications.
+        \end{itemize}
+        
+    \end{itemize}
+    
+    
+    \section{Projects}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{ResumeGPT} & Aug. 2023 -- Present \\
+            \textit{Python, ChatGPT Large Language Model (LLM), React, and Firebase} & \\
+        \end{tabular*}\vspace{-7pt}
+        \begin{itemize}
+            \item Developing a generative AI-based application that customizes a user’s resume based on a job posting.
+            \item Fine-tuning Open AI’s ChatGPT LLM to generate the tailored resume.
+            \item Integrating/deploying this full-stack web application with a React front-end and Firebase back-end.
+        \end{itemize}
+        
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{Bits of Good at Georgia Tech: Product Maintenance} & Sep. 2021 -- Present \\
+            \textit{Firebase, Express, React, and Node} & \\
+        \end{tabular*}\vspace{-7pt}
+        \begin{itemize}
+            \item Maintaining and refining MERN stack-based portals in a collaborative sprint-based delivery team for multiple nonprofits.
+            \item Incorporating key functionality such as input validation, authentication, and client data submission forms.
+        \end{itemize}
+        
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{Health Assistant} & Nov. 2020 -- Jan. 2021 \\
+            \textit{Python, Google Dialogflow, Flask, and HTML/CSS} & \\
+        \end{tabular*}\vspace{-7pt}
+        \begin{itemize}
+            \item Created a chatbot-centric webpage with Google Dialogflow, HTML, and CSS that provides detailed nutrition and exercise recommendations based on user health conditions and goals.
+            \item Developed customized back-end responses with Python and generated webhooks using Flask.
+        \end{itemize}
+        
+    \end{itemize}
+    
+    
+    \section{Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \item{
+            \textbf{Languages}{: Java, Python, C++, SQL, JavaScript, HTML/CSS} \\
+            \textbf{Developer Tools}{: Jira, Git, Agile, MySQL, VS Code, IntelliJ, Docker, Postman} \\
+            \textbf{Frameworks/Libraries}{: Flask, Django, HTML, CSS, JavaScript, Spring, MongoDB, SQL, JUnit, Selenium, AWS, GCP, Docker} \\
+            \textbf{Interpersonal}{: Public Speaking, Customer Service, Teamwork, Problem Solving}
+        }
+    \end{itemize}
+    
+    \end{document}

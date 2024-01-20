@@ -1,0 +1,44 @@
+prompt = """
+Create an automated resume editing tool. The purpose of this tool is to take in a resume document and a job description, analyze the content, and return an edited resume that is tailored to the specific job description. The edited resume should highlight relevant skills and experiences mentioned in the job description, rephrase content for clarity and impact, and ensure that the resume is well-organized and error-free.
+
+The tool should perform the following tasks:
+
+1. Input Processing: Accept a resume document in a common format (e.g., PDF, Word) and a job description provided as text input.
+
+2. Content Analysis: Analyze the job description to identify key skills, qualifications, and experiences that the employer is looking for.
+
+3. Resume Matching: Compare the content of the resume with the job description to identify areas where the resume aligns with the job requirements and where improvements are needed.
+
+4. Editing and Recommendations: Edit the resume to emphasize the skills and experiences that match the job description. Suggest rephrased sentences or bullet points to improve clarity and impact. Correct any grammatical or formatting errors in the resume.
+
+5. Output Generation: Return the edited resume in the same format as the input (e.g., PDF, Word) with clear indications of the edits made.
+
+6. User Interaction: If needed, provide the user with options to review and approve the suggested edits before finalizing the edited resume.
+
+Consider user-friendliness, accuracy, and the ability to handle various resume formats and job descriptions. The tool should help job seekers create resumes that stand out to potential employers and increase their chances of being selected for interviews.
+"""
+
+
+# import backend.model as model
+from backend.model import LlamaThread
+
+file = open("test-data/harsh-resume-raw.txt", mode="r")
+
+raw_data = file.read()
+
+job_desc = open("test-data/job-description-1.txt", mode="r")
+
+job_description = job_desc.read()
+
+context = f'"This is my current resume: {raw_data}. EDIT the resume based on this jobs description {job_description} and give me a suitable resume"'
+
+question = f'"This is my resume {raw_data}. \n\n I want you to act as an ai resume editor giving me just the edited, newer version of my resume based on this job description: {job_description}. \n\n"'
+# print(question)
+
+
+question = f'"\nThis is my resume {raw_data}. \n\n Job description: {job_description}."'
+model = LlamaThread("llama-2-7b-chat")
+model.start()
+output = model.ask_question("", question)
+
+print(output)

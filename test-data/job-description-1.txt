@@ -1,0 +1,39 @@
+**Intern / Trainee - Products & Technology**
+
+Join our dynamic team as an Intern / Trainee, contributing problem-solving skills to tackle complex business challenges spanning from strategy formulation to execution.
+
+**Qualifications:**
+
+- **Education:** Bachelor's degree in relevant field.
+- **Experience:** Entry-level, 0 years of experience required.
+- **Preferred GPA:** 3.0 or above.
+
+**Key Information:**
+
+- Ideal candidates are in their 3rd or 4th year of a 4- or 5-year degree program.
+- Internship typically occurs in the summer prior to intended graduation.
+
+**Preferred Knowledge/Skills:**
+
+Demonstrate ability or success in the following areas:
+
+- Project management using agile methodologies and tools like Azure DevOps.
+- Programming skills in languages like Java, .NET, Node.js, Python.
+- Working with analytics tools such as Alteryx, R, Jupyter Notebooks.
+- Familiarity with big data tools like Databricks, Spark, Kafka.
+- Knowledge of structured (SQL Server, Postgres) and unstructured (CosmosDB, Neo4j) data storage technologies.
+- Proficiency in front-end web technologies like Angular, React, JavaScript.
+- Experience with visualization tools such as Tableau, PowerBI.
+- Familiarity with automation and low code tools like Msft Power Platform, RPA tools.
+- Understanding of data integration tools like Azure Data Factory, service bus, Apache NiFi.
+- Testing tool experience including Selenium, Cypress, PyTest, BlazeMeter, JMeter.
+- Familiarity with DevOps technologies like Git, Jenkins, Docker/Kubernetes, Azure DevOps.
+- Knowledge of cloud IaaS/PaaS platforms like AWS, GCP, Azure.
+- Data modeling skills.
+- Awareness of technology trends like machine learning, NLP, low code app development, and blockchain.
+- Strong project management, multitasking, and team collaboration abilities.
+- Innovative problem-solving skills under tight deadlines.
+- Openness to new ideas and a passion for learning emerging technologies.
+- Effective teamwork and communication skills.
+- Ability to create a positive work environment by building relationships and seeking guidance.
+- Interest in exploring digitization solutions.
