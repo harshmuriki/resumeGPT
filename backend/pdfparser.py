@@ -14,7 +14,7 @@ def get_JobData(job_link):
             # Extract all text from the page
             all_text = soup.get_text()
             cleaned_string = re.sub(r'^\s*$', '', all_text, flags=re.MULTILINE)
-            
+            print("CLeaned string:", cleaned_string)
             return cleaned_string
 
         else:
